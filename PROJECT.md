@@ -13,7 +13,7 @@
 | Property | Description |
 |----------|-------|
 | `id` | Auto-incrementing unique identifier |
-| `name` Student's full name |
+| `name`| Student's full name |
 | `email`| Student's email address |
 | `age` | Student's age 1-120 |
 | `created_at` | Record creation timestamp |
