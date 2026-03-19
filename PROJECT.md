@@ -11,7 +11,7 @@
 
 ### Table Structure
 
-|--------|-----------|-------------|-------------|
+|--------|-----------|
 | `id` | Auto-incrementing unique identifier |
 | `name` Student's full name |
 | `email`| Student's email address |
