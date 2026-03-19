@@ -1,0 +1,106 @@
+.student-list {
+    padding: var(--space-4) 0;
+  }
+  
+  .list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--space-6);
+  }
+  
+  .page-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    letter-spacing: -0.02em;
+  }
+  
+  .list-meta {
+    margin-bottom: var(--space-4);
+  }
+  
+  .student-count {
+    font-size: 0.875rem;
+    color: var(--gray-500);
+  }
+  
+  .students-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--space-4);
+  }
+  
+  .loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    gap: var(--space-4);
+  }
+  
+  .loading-text {
+    color: var(--gray-500);
+  }
+  
+  .error-container {
+    text-align: center;
+    padding: var(--space-12);
+    background-color: white;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--gray-200);
+    max-width: 400px;
+    margin: var(--space-12) auto;
+  }
+  
+  .error-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--gray-900);
+    margin-bottom: var(--space-2);
+  }
+  
+  .error-message {
+    color: var(--gray-600);
+    margin-bottom: var(--space-4);
+  }
+  
+  .empty-state {
+    text-align: center;
+    padding: var(--space-12);
+    background-color: white;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--gray-200);
+    max-width: 400px;
+    margin: var(--space-12) auto;
+  }
+  
+  .empty-state-icon {
+    font-size: 3rem;
+    margin-bottom: var(--space-4);
+  }
+  
+  .empty-state-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--gray-900);
+    margin-bottom: var(--space-2);
+  }
+  
+  .empty-state-description {
+    color: var(--gray-600);
+    margin-bottom: var(--space-6);
+  }
+  
+  @media (max-width: 640px) {
+    .list-header {
+      flex-direction: column;
+      gap: var(--space-4);
+      text-align: center;
+    }
+  
+    .students-grid {
+      grid-template-columns: 1fr;
+    }
+  }

@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build
+dist/
+build/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+nest-cli.log
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Testing
+coverage/
+test-results/
+*.test.ts.snap
+
+# NestJS specific
+nest-cli.json.backup
+ormconfig.json.backup
+
+# Temp files
+temp/
+tmp/

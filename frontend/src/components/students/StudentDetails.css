@@ -1,0 +1,225 @@
+.details-page {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .details-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+  }
+  
+  .details-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--gray-900);
+  }
+  
+  .profile {
+    display: flex;
+    gap: var(--space-6);
+    margin-bottom: var(--space-8);
+  }
+  
+  .profile-avatar {
+    width: 96px;
+    height: 96px;
+    background: linear-gradient(135deg, var(--blue-500), var(--blue-700));
+    border-radius: var(--radius-xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+  
+  .profile-info {
+    flex: 1;
+  }
+  
+  .profile-name-section {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin-bottom: var(--space-4);
+    flex-wrap: wrap;
+  }
+  
+  .profile-name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    letter-spacing: -0.02em;
+  }
+  
+  .badge {
+    display: inline-block;
+    padding: var(--space-1) var(--space-2);
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  
+  .badge-success {
+    background-color: var(--green-100);
+    color: var(--green-700);
+  }
+  
+  .badge-warning {
+    background-color: var(--yellow-100);
+    color: var(--yellow-700);
+  }
+  
+  .badge-info {
+    background-color: var(--blue-100);
+    color: var(--blue-700);
+  }
+  
+  .profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+  
+  .detail-row {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    color: var(--gray-600);
+  }
+  
+  .detail-icon {
+    color: var(--gray-400);
+    flex-shrink: 0;
+  }
+  
+  .detail-link {
+    color: var(--blue-600);
+    text-decoration: none;
+  }
+  
+  .detail-link:hover {
+    text-decoration: underline;
+  }
+  
+  .metadata {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+    padding: var(--space-4);
+    background-color: var(--gray-50);
+    border-radius: var(--radius-lg);
+    margin-top: var(--space-4);
+  }
+  
+  .metadata-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+  
+  .metadata-label {
+    font-size: 0.75rem;
+    color: var(--gray-500);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .metadata-value {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--gray-900);
+  }
+  
+  .details-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--space-3);
+  }
+  
+  .loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    gap: var(--space-4);
+  }
+  
+  .loading-text {
+    color: var(--gray-500);
+  }
+  
+  .error-container {
+    text-align: center;
+    padding: var(--space-12);
+    background-color: white;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--gray-200);
+    max-width: 400px;
+    margin: var(--space-12) auto;
+  }
+  
+  .error-icon {
+    width: 48px;
+    height: 48px;
+    background-color: var(--red-100);
+    color: var(--red-500);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 auto var(--space-4);
+  }
+  
+  .error-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--gray-900);
+    margin-bottom: var(--space-2);
+  }
+  
+  .error-message {
+    color: var(--gray-600);
+    margin-bottom: var(--space-6);
+  }
+  
+  @media (max-width: 640px) {
+    .profile {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .profile-name-section {
+      justify-content: center;
+    }
+  
+    .detail-row {
+      justify-content: center;
+    }
+  
+    .metadata {
+      grid-template-columns: 1fr;
+    }
+  
+    .details-actions {
+      flex-direction: column;
+    }
+  
+    .details-actions button,
+    .details-actions a {
+      width: 100%;
+    }
+  
+    .details-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--space-2);
+    }
+  }

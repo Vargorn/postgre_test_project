@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build
+dist/
+build/
+*.tsbuildinfo
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Testing
+coverage/
+.nyc_output/
+
+# Vite specific
+vite.config.ts.timestamp-*
+vite.config.js.timestamp-*
+
+# Public
+public/assets/
+
+# Editor
+.history/
+.vscode/
+
+# Temp files
+temp/
+tmp/
+.DS_Store
